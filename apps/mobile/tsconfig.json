@@ -1,0 +1,13 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@nimbus/catalog": ["../../packages/catalog/src/index.ts"],
+      "@nimbus/catalog/*": ["../../packages/catalog/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "../../packages/catalog/src/**/*.ts"]
+}
